@@ -351,7 +351,7 @@ void show_reverse(Element_type *head) {
  * @param index
  */
 void show_by_index(Element_type **head, int index) {
-
+// TODO
 }
 
 /**
