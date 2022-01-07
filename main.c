@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
 #include <windows.h>
 
 /**
@@ -42,7 +41,6 @@ void pop_back(Element_type **head);
 void pop_by_index(Element_type **head, int index);
 
 void show_by_index(Element_type **head, int index);
-
 
 DataRecord_type *getNewRecord(int value);
 
@@ -167,7 +165,6 @@ void push_front(Element_type **head, int value) {
         (*head)->prev = current; // zaś dla obecnego czoła listy aktualny element będzie elementem go poprzedzającym
         *head = current; // dlatego ostatecznie aktualny element staje się nowym czołem listy
     }
-
 }
 
 /**
@@ -236,8 +233,6 @@ void push_by_index(Element_type **head, int value, int index) {
             // nowy element jest teraz elementem go poprzedzającym
         }
     }
-
-
 }
 
 /**
@@ -298,8 +293,6 @@ void pop_by_index(Element_type **head, int index) {
         current->next->prev = current;
         free(tmp); // i wykasowanie go z pamięci
     }
-
-
 }
 
 /**
